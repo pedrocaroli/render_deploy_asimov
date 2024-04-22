@@ -16,7 +16,7 @@ load_figure_template("minty")
 app = dash.Dash(external_stylesheets=[dbc.themes.MINTY])
 server = app.server
 
-df = pd.read_excel('C:/Users/Caroli/OneDrive/Documentos/Dashboard Asimov/BaseFuncionarios.xlsx')
+df = pd.read_excel('assets/BaseFuncionarios.xlsx')
 df["Data de Contratacao"] = pd.to_datetime(df["Data de Contratacao"])
 df
 
